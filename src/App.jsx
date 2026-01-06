@@ -8,8 +8,11 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <Hero />
-      <ArticleSection />
+      <div className="px-[120px]">
+        <Hero />
+        <ArticleSection />
+      </div>
+
       <Footer />
     </div>
   );

@@ -9,10 +9,12 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import BlogCard from "./blogcard";
+import { blogPosts } from "@/data/blogPost";
 
 function ArticleSection() {
   return (
-    <section className="w-full bg-white md:px-[120px] md:pt-[80px] md:pb-[120px]">
+    <section className="w-full bg-white md:pt-[80px] md:pb-[120px]">
       <div className="">
         <h2 className="px-[16px] py-[16px] md:px-0 text-headline-3 md:text-headline-3 text-brown-600">
           Latest articles
@@ -45,10 +47,7 @@ function ArticleSection() {
           <p className="text-body-1 text-brown-400">Category</p>
           <Select>
             <SelectTrigger className="w-full md:max-w-[380px] bg-white text-brown-400">
-              <SelectValue
-                placeholder="Select category"
-                className="!placeholder:text-brown-400"
-              />
+              <SelectValue placeholder="Select category" />
             </SelectTrigger>
             <SelectContent>
               <SelectGroup className="text-brown-400">
@@ -60,6 +59,56 @@ function ArticleSection() {
             </SelectContent>
           </Select>
         </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[20px] gap-y-[48px] mt-[48px]">
+        <BlogCard
+          image={blogPosts[0].image}
+          category={blogPosts[0].category}
+          title={blogPosts[0].title}
+          description={blogPosts[0].description}
+          author={blogPosts[0].author}
+          date={blogPosts[0].date}
+        />
+        <BlogCard
+          image={blogPosts[1].image}
+          category={blogPosts[1].category}
+          title={blogPosts[1].title}
+          description={blogPosts[1].description}
+          author={blogPosts[1].author}
+          date={blogPosts[1].date}
+        />
+        <BlogCard
+          image={blogPosts[2].image}
+          category={blogPosts[2].category}
+          title={blogPosts[2].title}
+          description={blogPosts[2].description}
+          author={blogPosts[2].author}
+          date={blogPosts[2].date}
+        />
+        <BlogCard
+          image={blogPosts[3].image}
+          category={blogPosts[3].category}
+          title={blogPosts[3].title}
+          description={blogPosts[3].description}
+          author={blogPosts[3].author}
+          date={blogPosts[3].date}
+        />
+        <BlogCard
+          image={blogPosts[4].image}
+          category={blogPosts[4].category}
+          title={blogPosts[4].title}
+          description={blogPosts[4].description}
+          author={blogPosts[4].author}
+          date={blogPosts[4].date}
+        />
+        <BlogCard
+          image={blogPosts[5].image}
+          category={blogPosts[5].category}
+          title={blogPosts[5].title}
+          description={blogPosts[5].description}
+          author={blogPosts[5].author}
+          date={blogPosts[5].date}
+        />
       </div>
     </section>
   );

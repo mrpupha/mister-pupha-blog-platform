@@ -2,11 +2,12 @@ import tourist from "../assets/images/tourist.jpg";
 
 function Hero() {
   return (
-    <section className="w-full px-[16px] py-[40px] gap-[40px] md:px-[120px] md:pt-[60px] md:gap-[80px] font-sans">
+    <section className="w-full px-[16px] py-[40px] gap-[40px] md:pt-[60px] md:gap-[80px] font-sans">
       <div className="flex flex-col gap-[40px] md:flex-row md:gap-[60px] md:items-center">
         <div className="flex flex-1 flex-col">
           <h1 className="text-headline-2 md:text-headline-1 text-brown-600 text-center md:text-right">
-            Stay Informed,
+            Stay <br />
+            Informed,
             <br />
             Stay Inspired
           </h1>

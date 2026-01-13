@@ -1,18 +1,20 @@
 import "./App.css";
-
-function Section() {
-  return (
-    <h1 class="text-3xl font-bold text-brown-400">
-      My First React App on Vite
-    </h1>
-  );
-}
+import Navbar from "./components/Navbar";
+import Hero from "./components/HeroSection";
+import Footer from "./components/Footer";
+import ArticleSection from "./components/ArticleSection";
 
 function App() {
   return (
-    <>
-      <Section />
-    </>
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <div className="">
+        <Hero />
+        <ArticleSection />
+      </div>
+
+      <Footer />
+    </div>
   );
 }
 

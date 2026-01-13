@@ -1,14 +1,14 @@
 import "./App.css";
-import Navbar from "./components/navbar";
-import Hero from "./components/hero";
-import Footer from "./components/footer";
-import ArticleSection from "./components/article";
+import Navbar from "./components/Navbar";
+import Hero from "./components/HeroSection";
+import Footer from "./components/Footer";
+import ArticleSection from "./components/ArticleSection";
 
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <div className="px-[120px]">
+      <div className="">
         <Hero />
         <ArticleSection />
       </div>

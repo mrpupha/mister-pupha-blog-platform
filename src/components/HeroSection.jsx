@@ -2,11 +2,11 @@ import tourist from "../assets/images/tourist.jpg";
 
 function Hero() {
   return (
-    <section className="w-full px-[16px] py-[40px] gap-[40px] md:pt-[60px] md:gap-[80px] font-sans">
+    <section className="w-full md:px-[120px] px-[16px] py-[40px] gap-[40px] md:pt-[60px] md:gap-[80px] font-sans">
       <div className="flex flex-col gap-[40px] md:flex-row md:gap-[60px] md:items-center">
         <div className="flex flex-1 flex-col">
           <h1 className="text-headline-2 md:text-headline-1 text-brown-600 text-center md:text-right">
-            Stay <br />
+            Stay <br className="hidden" />
             Informed,
             <br />
             Stay Inspired
@@ -34,7 +34,7 @@ function Hero() {
 
           <h3 className="text-headline-3 text-brown-500">Thompson P.</h3>
 
-          <p className="text-body-2 text-brown-400">
+          <p className="text-body-1 text-brown-400">
             I am a pet enthusiast and freelance writer who specializes in animal
             behavior and care. With a deep love for cats, I enjoy sharing
             insights on feline companionship and wellness.
